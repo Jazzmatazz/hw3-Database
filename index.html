@@ -9,10 +9,18 @@
     <script type="text/javascript" src="./gameengine.js"></script>
     <script type="text/javascript" src="./main.js"></script>
     <script type="text/javascript" src="./database.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div>
     <canvas id="gameWorld" width="800" height="800" style="border: 1px solid white; background: black"></canvas>
-    <input id="mySaveButton" type="button" value="Save State" onclick="saveData();"/>
-    <input id="myLoadButton" type="button" value="Load State" onclick="loadData();"/>
+    </div>
+    <div>
+    <input id="mySaveButton" type="button" value="Save State" onclick="saveData();" class="btn btn-success btn-lg" style="" />
+    <input id="myLoadButton" type="button" value="Load State" onclick="loadData();" class="btn btn-success btn-lg" style=""/>
+    </div>
 </body>
 </html>
