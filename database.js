@@ -28,17 +28,17 @@ socket.on("load", function (data) {
 
     // Recreate each entity
     for (var i = 0; i < data.entities.length; i++) {
-		var animal = new Circle(gameEngine, data[i].type);//recreate your entity)
-        animal.mouseKilledCount = data[i].mouseKilledCount;
-        animal.radius = data[i].radius;
-        animal.visualRadius = data[i].visualRadius;
-        animal.width = data[i].width;
-        animal.height = data[i].height;
-        animal.it = data[i].it;
-        animal.x = data[i].x;
-        animal.y = data[i].y;
-        animal.velocity.x = data[i].velocityX;
-        animal.velocity.y = data[i].velocityY;
+		var animal = new Circle(gameEngine, data.entities[i].type);//recreate your entity)
+        animal.mouseKilledCount = data.entities[i].mouseKilledCount;
+        animal.radius = data.entities[i].radius;
+        animal.visualRadius = data.entities[i].visualRadius;
+        animal.width = data.entities[i].width;
+        animal.height = data.entities[i].height;
+        animal.it = data.entities[i].it;
+        animal.x = data.entities[i].x;
+        animal.y = data.entities[i].y;
+        animal.velocity.x = data.entities[i].velocityX;
+        animal.velocity.y = data.entities[i].velocityY;
         gameEngine.addEntity(animal);
         console.log("added animal back");
     }
