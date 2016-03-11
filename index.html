@@ -1,0 +1,18 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Robot Tag</title>
+    <script type="text/javascript" src="http://76.28.150.193:8888/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./database.js"></script>
+</head>
+<body>
+    <canvas id="gameWorld" width="800" height="800" style="border: 1px solid white; background: black"></canvas>
+    <input id="mySaveButton" type="button" value="Save State" onclick="saveData();"/>
+    <input id="myLoadButton" type="button" value="Load State" onclick="loadData();"/>
+</body>
+</html>
